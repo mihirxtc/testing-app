@@ -12,8 +12,16 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/contact", (req, res) => {
-    res.send("Contact Page")
+    res.send("Contact Page");
 });
+
+app.get("/admin", (req, res) => {
+    res.send("admin");
+});
+
+app.get("/admin/dashboard", (req, res) => {
+    res.send("Admin Dashboard");
+})
 
 app.listen(port, () => {
     console.log(`Server is started on port ${port}`);
